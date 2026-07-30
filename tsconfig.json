@@ -21,7 +21,11 @@
     "paths": {
       "@/*": ["./*"]
     },
-    "types": ["vitest/globals", "@testing-library/dom", "@testing-library/react"]
+    "types": [
+      "vitest/globals",
+      "@testing-library/dom",
+      "@testing-library/react"
+    ]
   },
   "include": [
     "next-env.d.ts",
