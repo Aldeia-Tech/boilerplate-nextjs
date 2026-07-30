@@ -3,9 +3,9 @@ import path from 'path';
 const config = {
   '*.{js,jsx,ts,tsx}': [
     (filenames) =>
-      `next lint --fix --file ${filenames
-        .map((f) => path.relative(process.cwd(), f))
-        .join(' --file ')}`,
+      `eslint --fix ${filenames
+        .map((f) => `"${path.relative(process.cwd(), f)}"`)
+        .join(' ')}`,
     'prettier --write',
     'vitest related --run --passWithNoTests',
   ],

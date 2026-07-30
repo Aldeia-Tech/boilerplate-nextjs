@@ -8,6 +8,8 @@ describe('<Home />', () => {
     const homeCopyright = screen.getByTestId('home-copyright');
     expect(container).toBeInTheDocument();
     expect(homeTitle).toHaveTextContent('Aldeia Tech');
-    expect(homeCopyright).toHaveTextContent('todos dos direitos resevados ao AldeiaTech ©');
+    expect(homeCopyright).toHaveTextContent(
+      'todos dos direitos resevados ao AldeiaTech ©',
+    );
   });
 });
